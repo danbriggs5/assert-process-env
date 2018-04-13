@@ -1,5 +1,5 @@
 # assert-process-env
-Simple module that loads env variables from process.env and asserts they exist. Reduces boilerplate if you are loading lots of envs and performing assertions.
+Simple module that loads env variables from `process.env` and asserts they exist. Reduces boilerplate if you are loading lots of envs and performing assertions.
 
 ## Install
 ```shell
