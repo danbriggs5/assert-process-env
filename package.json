@@ -1,6 +1,6 @@
 {
   "name": "assert-process-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load process.env variables and assert they exist.",
   "main": "index.js",
   "scripts": {
