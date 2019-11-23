@@ -8,8 +8,8 @@ function getUniqueEnvName() {
 	return `ENV${counter}`;
 }
 
-test('assert-process-env', (t1) => {
-	t1.test('load an env that exists', (t) => {
+test('assert-process-env', t1 => {
+	t1.test('load an env that exists', t => {
 		const name = getUniqueEnvName();
 		process.env[name] = '1';
 
@@ -18,7 +18,7 @@ test('assert-process-env', (t1) => {
 		t.end();
 	});
 
-	t1.test('load an env that does not exist', (t) => {
+	t1.test('load an env that does not exist', t => {
 		let asserted = false;
 		const name = getUniqueEnvName();
 
@@ -32,7 +32,7 @@ test('assert-process-env', (t1) => {
 		t.end();
 	});
 
-	t1.test('load an env that does not exist with custom message', (t) => {
+	t1.test('load an env that does not exist with custom message', t => {
 		let msg = '';
 		const name = getUniqueEnvName();
 
@@ -46,7 +46,7 @@ test('assert-process-env', (t1) => {
 		t.end();
 	});
 
-	t1.test('custom validation on valid env', (t) => {
+	t1.test('custom validation on valid env', t => {
 		const name = getUniqueEnvName();
 
 		process.env[name] = '1';
@@ -56,7 +56,7 @@ test('assert-process-env', (t1) => {
 		t.end();
 	});
 
-	t1.test('custom validation on invalid env', (t) => {
+	t1.test('custom validation on invalid env', t => {
 		let asserted = false;
 		const name = getUniqueEnvName();
 
@@ -71,8 +71,7 @@ test('assert-process-env', (t1) => {
 		t.end();
 	});
 
-
-	t1.test('custom validation on invalid env with custom message', (t) => {
+	t1.test('custom validation on invalid env with custom message', t => {
 		let msg = '';
 		const name = getUniqueEnvName();
 

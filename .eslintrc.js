@@ -1,5 +1,3 @@
 module.exports = {
-	extends: [
-		'f2f-base/node',
-	],
+	extends: ['danbriggs5-base', 'plugin:prettier/recommended'],
 };
