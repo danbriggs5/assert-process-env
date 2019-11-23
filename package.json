@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "description": "Load process.env variables and assert they exist.",
   "main": "index.js",
-  "repository": "github:danbriggs5/assert-process-env",
   "scripts": {
     "test": "node_modules/.bin/tape test/**/*.spec.js | node_modules/.bin/tap-spec",
     "eslint": "node node_modules/eslint/bin/eslint.js --ignore-path .eslintignore -c .eslintrc.js ./",
     "precommit": "npm-run-all --parallel test eslint"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danbriggs5/assert-process-env.git"
+  },
+  "author": "danbriggs5",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danbriggs5/assert-process-env/issues"
+  },
+  "homepage": "https://github.com/danbriggs5/assert-process-env#readme",
   "devDependencies": {
     "eslint": "3.19.0",
     "eslint-config-f2f-base": "2.1.2",

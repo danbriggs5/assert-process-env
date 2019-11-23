@@ -24,3 +24,6 @@ const ENV3 = assertProcessEnv('ENV3', 'We forgot ENV3... Cmon...');
 - `key`: Required. The name of your variable. Will be loaded as `process.env[key]`
 - `validator`: Optional. Function to perform additional validation. Assertion will throw if a falsy value is returned.
 - `message`: Optional. Message to display in the assertion. A default message will be used if nothing is provided.
+
+## License
+MIT
